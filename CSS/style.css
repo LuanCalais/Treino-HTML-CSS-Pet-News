@@ -32,6 +32,15 @@ body{
 
 /* Navegação */
 
+a:link, a:visited{
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover{
+	color: #e50040;
+}
+
 ul{
 	margin: 0;
 	padding: 0;
@@ -67,7 +76,7 @@ ul{
 }
 
 body.home #navegacao a#home,
-body.brasil #navegacao a#brasil,
+body.destaque #navegacao a#destaque,
 body.internacional #navegacao a#internacional,
 body.silvestres #navegacao a#silvestres,
 body.domesticos #navegacao a#domesticos,
@@ -97,13 +106,8 @@ body.fotos #navegacao a#fotos
 	width: 270px;
 	float: left; /* flutuar a esquerda */
 	margin: 0 0 20px 195px; /* abre espaço para o menu lateral ocupar */
-	background: blue;
 }
 
-/* para o layout de 3 colunas */
-#tres-colunas #primario{ /* container = 750px */
-	width: 270px;
-}
 
 /* para layout de 2 colunas */
 #duas-colunas #primario{
@@ -120,7 +124,6 @@ body.fotos #navegacao a#fotos
 	width: 270px;
 	float: left; 
 	margin: 0 0 20px 15px;
-	background: yellow;
 }
 
 /* Box Configuration */
@@ -182,6 +185,61 @@ input.submit{
 	border: 2px solid #870529;
 }
 
+/* Imagem */
+img.imagem-principal{
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/* Cabeçalhos */
+h3{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3{
+	background: #b10333;
+	color: #fff;
+}
+
+.noticia h3{
+	background: #de003e;
+}
+
+/* Mundo */
+
+#lista-mundo li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-mundo li a img{
+	float: left;
+	margin: 5px;
+}
+
+#lista-mundo li a{
+	text-decoration: none;
+}
+
+#lista-mundo li a h3{
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-mundo li a p{
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-mundo li:hover{
+	background: #eee;
+	cursor: pointer;
+}
 
 /* footer configuration */
 #container-footer{
